@@ -15,7 +15,7 @@ use common\models\User;
                 <div class="row">
                     <div class="col-sm-4">
                         <div class="logo pull-left">
-                            <a href="index"><img src="/peyco/backend/web/img/logo.jpg" width="180" alt="" /></a>
+                            <a href="index"><img src="/peyco01/backend/web/img/logo.jpg" width="180" alt="" /></a>
                             
                         </div>
                         
@@ -47,9 +47,9 @@ use common\models\User;
                                 ],
                             ]);
                                 
-                            // $menuItems = [
-                            //     ['label' => 'Inicio', 'url' => ['/site/index']],                                
-                            // ];     
+                            $menuItems = [
+                                ['label' => 'Inicio', 'url' => ['site/']],                                
+                            ];     
                                if (Yii::$app->user->isGuest) {
                                  $menuItems[] = ['label' => 'Carro Compras', 'url' => ['shoppingcart/listcart']];
                                         $menuItems[] = ['label' => 'Registrarse', ['class'], 'url' => ['/site/signup']];
@@ -59,11 +59,11 @@ use common\models\User;
                                     $menuItems[] = ['label' => 'Registro Compras', 'url' => ['shoppingcart/checkout']];
                                      $menuItems[] = ['label' => 'Carro Compras', 'url' => ['shoppingcart/listcart']];
                                         $menuItems[] = ['label' => 'Pedido', 'url' => ['/site/pedido']];
-                                        $menuItems[] = ['label' => 'Perfil', 'url' => ['/site/view', ]];
+                                        $menuItems[] = ['label' => 'Perfil', 'url' => ['/site/view', 'id' => Yii::$app->user->identity->id]];
                                         $menuItems[] = '<li>'
                                             . Html::beginForm(['/site/logout'], 'post')
                                             . Html::submitButton(
-                                                'Logout (' . Yii::$app->user->identity->nombres . ')',
+                                                'Salir (' . Yii::$app->user->identity->nombres . ')',
                                                 ['class' => 'btn btn-link logout']
                                             )
                                             . Html::endForm()

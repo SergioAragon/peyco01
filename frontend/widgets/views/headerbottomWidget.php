@@ -1,7 +1,7 @@
 <div class="header-bottom"><!--header-bottom-->
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-9">
+                    <!-- <div class="col-sm-9">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                 <span class="sr-only">Toggle navigation</span>
@@ -32,11 +32,14 @@
                                 <li><a href="contact-us.html">Contact</a></li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="search_box pull-right">
-                            <input type="text" placeholder="Search"/>
-                        </div>
+                    </div> -->
+                    <div class="col-sm-12">
+                        <!-- <ul class="search_box pull-right"> -->
+                            <ul class="nav navbar-nav pull-right">
+                            <li><a href="site/contact">Contacto</a></li>
+                        
+                            <li><a href="/peyco01/frontend/web/archivos/ayudausuarios" target="_blank">Ayuda</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>

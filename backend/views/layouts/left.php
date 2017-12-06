@@ -18,7 +18,7 @@
         <form action="#" method="get" class="sidebar-form">
             <!-- <div class="input-group"> -->
                 <div class="pull-right">
-                <p><a class="btn btn-default" href="/peyco01/backend/web/archivos/ayudausuarios">Ayuda &raquo;</a></p>
+                <p><a class="btn btn-default" href="/backend/archivos/ayudausuarios">Ayuda &raquo;</a></p>
                 <!-- <input type="text" name="q" class="form-control" placeholder="Search..."/>
               <span class="input-group-btn">
                 <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i>
@@ -35,11 +35,11 @@
                     //['label' => 'Menu Yii2', 'options' => ['class' => 'header']],
                     //['label' => 'Gii', 'icon' => 'file-code-o', 'url' => ['/gii']],
                     //['label' => 'Debug', 'icon' => 'dashboard', 'url' => ['/debug']],
-                    ['label' => 'Frontend', 'url' => ['../../frontend/web/site/index']],
+                    ['label' => 'Frontend', 'url' => ['../frontend/']],
                     // ['label' => 'Registro Admin', 'url' => ['clientes/create']],
                     //['label' => 'Productos', 'url' => ['producto/index']],
                     // ['label' => 'Color', 'url' => ['color/index']],
-                    ['label' => 'Agenda', 'url' => ['event/index']],
+                    ['label' => 'Agenda', 'url' => ['event/']],
                     // ['label' => 'Clientes', 'url' => ['clientes/index']],
                     // ['label' => 'Pedidos', 'url' => ['pedido/index']],
                     // ['label' => 'Cotización', 'url' => ['cotizacion/index']],
@@ -50,10 +50,10 @@
                         'url' => '#',
                         'items' => [
                             ['label' => 'Gii', 'icon' => 'file-code-o', 'url' => ['/gii'],],
-                            ['label' => 'Productos', 'url' => ['producto/index']],                            
-                            ['label' => 'Clientes', 'url' => ['clientes/index']],
-                            ['label' => 'Pedidos', 'url' => ['pedido/index']],
-                            ['label' => 'Cotización', 'url' => ['cotizacion/index']],
+                            ['label' => 'Productos', 'url' => ['producto/']],                            
+                            ['label' => 'Clientes', 'url' => ['/clientes/']],
+                            ['label' => 'Pedidos', 'url' => ['/pedido/']],
+                            ['label' => 'Cotización', 'url' => ['/cotizacion/']],
                         ],
                     ],
 
@@ -64,13 +64,13 @@
                         'items' => [
                             ['label' => 'Gii', 'icon' => 'file-code-o', 'url' => ['/gii'],],
                             //['label' => 'Debug', 'icon' => 'dashboard', 'url' => ['/debug'],],
-                            ['label' => 'Color', 'url' => ['color/index']],
-                            ['label' => 'Materiales', 'url' => ['materiales/index']],
+                            ['label' => 'Color', 'url' => ['color/']],
+                            ['label' => 'Materiales', 'url' => ['materiales/']],
                             // ['label' => 'Fase', 'url' => ['fase/index']],
                             // ['label' => 'Estado', 'url' => ['estado/index']],
                             // ['label' => 'Departamento', 'url' => ['departamento/index']],
                             // ['label' => 'Municipio', 'url' => ['municipio/index']],
-                            ['label' => 'Clasificacion', 'url' => ['clasificacion/index']],
+                            ['label' => 'Clasificacion', 'url' => ['clasificacion/']],
                             
                         ],
                     ],
@@ -83,11 +83,11 @@
                             ['label' => 'Gii', 'icon' => 'file-code-o', 'url' => ['/gii'],],
                             //['label' => 'Debug', 'icon' => 'dashboard', 'url' => ['/debug'],],
                             // ['label' => 'Cotización-Productos', 'url' => ['detalle-cotizacion-productos/index']],
-                            ['label' => 'Material-Pedido', 'url' => ['detalle-material-pedido/index']],
+                            ['label' => 'Material-Pedido', 'url' => ['detalle-material-pedido/']],
                             // ['label' => 'Detalle Fase', 'url' => ['detalle-fase/index']],
                             //['label' => 'Detalle Stand', 'url' => ['detalle-stand/index']],
-                            ['label' => 'Producto Color', 'url' => ['detalle-producto-color/index']],
-                            ['label' => 'Producto Material', 'url' => ['detalle-producto-material/index']],
+                            ['label' => 'Producto Color', 'url' => ['detalle-producto-color/']],
+                            ['label' => 'Producto Material', 'url' => ['detalle-producto-material/']],
                         ],
                     ],
 

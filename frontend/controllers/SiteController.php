@@ -139,7 +139,7 @@ class SiteController extends Controller
                 
                 Yii::$app->user->logout();
                 
-                return $this->redirect(["../../backend/web/site/index"]);
+                return $this->redirect(["../peyco01/backend/"]);
                 
                }
                else
@@ -163,7 +163,7 @@ class SiteController extends Controller
                     {
                
                     Yii::$app->user->logout();
-                    return $this->redirect(["../../backend/web/site/index"]);            
+                    return $this->redirect(["../peyco01/backend/"]);            
                     }
                    else
                    {
