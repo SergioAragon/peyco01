@@ -11,7 +11,7 @@ use yii\jui\JuiAsset;
 /* @var $searchModel backend\models\EventSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Eventos';
+$this->title = 'Agenda';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
@@ -38,7 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <p><?= Html::a('Registrar Evento', ['create'], ['class' => 'btn btn-success']) ?></p>
+    <p><?= Html::a('Registrar agenda', ['create'], ['class' => 'btn btn-success']) ?></p>
 
     <div id="calendar">
         <!-- <script>

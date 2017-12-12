@@ -18,8 +18,8 @@ class PedidoSearch extends Pedido
     public function rules()
     {
         return [
-            [['id_pedido', 'cliente_id', 'estado_id', 'municipio_id'], 'integer'],
-            [['fecha_pedido', 'direccion', 'medidas'], 'safe'],
+            [['id_pedido', 'cliente_id', 'frente', 'fondo', 'cantidad_stand', 'telefono', 'municipio_id', 'estado_id'], 'integer'],
+            [['nombre_expo', 'nombre_empresa', 'Referencia_stand', 'direccion', 'fecha_pedido', 'updated_at'], 'safe'],
         ];
     }
 
@@ -61,13 +61,20 @@ class PedidoSearch extends Pedido
         $query->andFilterWhere([
             'id_pedido' => $this->id_pedido,
             'cliente_id' => $this->cliente_id,
+            'frente' => $this->frente,
+            'fondo' => $this->fondo,
+            'cantidad_stand' => $this->cantidad_stand,
             'fecha_pedido' => $this->fecha_pedido,
-            'estado_id' => $this->estado_id,
+            'telefono' => $this->telefono,
             'municipio_id' => $this->municipio_id,
+            'estado_id' => $this->estado_id,
+            'updated_at' => $this->updated_at,
         ]);
 
-        $query->andFilterWhere(['like', 'direccion', $this->direccion])
-            ->andFilterWhere(['like', 'medidas', $this->medidas]);
+        $query->andFilterWhere(['like', 'nombre_expo', $this->nombre_expo])
+            ->andFilterWhere(['like', 'nombre_empresa', $this->nombre_empresa])
+            ->andFilterWhere(['like', 'Referencia_stand', $this->Referencia_stand])
+            ->andFilterWhere(['like', 'direccion', $this->direccion]);
 
         return $dataProvider;
     }

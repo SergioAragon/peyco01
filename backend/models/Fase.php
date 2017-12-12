@@ -28,7 +28,9 @@ class Fase extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id_fase', 'descripcion'], 'required'],
+            // [['id_fase', 'descripcion'], 'required'],
+            [['descripcion'], 'required'],
+            ['descripcion', 'match','pattern'=>"/^[a-z]+$/i",'message'=> 'Sólo se aceptan letras'],
             [['id_fase'], 'integer'],
             [['descripcion'], 'string', 'max' => 20],
         ];
@@ -41,7 +43,7 @@ class Fase extends \yii\db\ActiveRecord
     {
         return [
             'id_fase' => 'Id Fase',
-            'descripcion' => 'Descripcion',
+            'descripcion' => 'Descripción',
         ];
     }
 

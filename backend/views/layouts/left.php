@@ -10,7 +10,7 @@
             <div class="pull-left info">
                 <!-- <p>Administrador</p> -->
 
-                <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+                <!-- <a href="#"><i class="fa fa-circle text-success"></i> Online</a> -->
             </div>
         </div>
 
@@ -35,11 +35,11 @@
                     //['label' => 'Menu Yii2', 'options' => ['class' => 'header']],
                     //['label' => 'Gii', 'icon' => 'file-code-o', 'url' => ['/gii']],
                     //['label' => 'Debug', 'icon' => 'dashboard', 'url' => ['/debug']],
-                    ['label' => 'Frontend', 'url' => ['../frontend/']],
+                    ['label' => 'Inicio', 'url' => ['../frontend/']],
                     // ['label' => 'Registro Admin', 'url' => ['clientes/create']],
                     //['label' => 'Productos', 'url' => ['producto/index']],
                     // ['label' => 'Color', 'url' => ['color/index']],
-                    ['label' => 'Agenda', 'url' => ['event/']],
+                    // ['label' => 'Agenda', 'url' => ['event/']],
                     // ['label' => 'Clientes', 'url' => ['clientes/index']],
                     // ['label' => 'Pedidos', 'url' => ['pedido/index']],
                     // ['label' => 'Cotización', 'url' => ['cotizacion/index']],
@@ -49,7 +49,8 @@
                         'icon' => 'share',
                         'url' => '#',
                         'items' => [
-                            ['label' => 'Gii', 'icon' => 'file-code-o', 'url' => ['/gii'],],
+                            // ['label' => 'Gii', 'icon' => 'file-code-o', 'url' => ['/gii'],],
+                            ['label' => 'Agenda', 'url' => ['agenda/']],
                             ['label' => 'Productos', 'url' => ['producto/']],                            
                             ['label' => 'Clientes', 'url' => ['/clientes/']],
                             ['label' => 'Pedidos', 'url' => ['/pedido/']],
@@ -66,7 +67,7 @@
                             //['label' => 'Debug', 'icon' => 'dashboard', 'url' => ['/debug'],],
                             ['label' => 'Color', 'url' => ['color/']],
                             ['label' => 'Materiales', 'url' => ['materiales/']],
-                            // ['label' => 'Fase', 'url' => ['fase/index']],
+                            ['label' => 'Fases', 'url' => ['fase/']],
                             // ['label' => 'Estado', 'url' => ['estado/index']],
                             // ['label' => 'Departamento', 'url' => ['departamento/index']],
                             // ['label' => 'Municipio', 'url' => ['municipio/index']],

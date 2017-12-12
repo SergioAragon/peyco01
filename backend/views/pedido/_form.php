@@ -1,55 +1,42 @@
 <?php
 
 use yii\helpers\Html;
-//use yii\widgets\ActiveForm;
-use yii\bootstrap\ActiveForm;
-use yii\helpers\ArrayHelper;
-use backend\models\Estado;
-use backend\models\Municipio;
-use backend\models\Clientes;
-use common\models\User;
+use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\Pedido */
+/* @var $model backend\models\Pedido */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
 <div class="pedido-form">
 
-  <h1><!-- $id = Yii::$app->user->identity->nombres; --></h1>
-
-  <h3><!--?= $id = Yii::$app->user->identity->nombres .' '. Yii::$app->user->identity->apellidos; ?--></h3>
-
     <?php $form = ActiveForm::begin(); ?>
 
-    <!-- $form->field($model, 'id_pedido')->textInput() -->
+    <?= $form->field($model, 'cliente_id')->textInput() ?>
 
-    <!-- $form->field($model, 'fecha_pedido')->textInput() -->
+    <?= $form->field($model, 'nombre_expo')->textInput(['maxlength' => true]) ?>
 
-    <!--?= $form->field($model, 'cliente_id')->Input([User::find()->one(), 'id', 'nombres']);  ?-->
+    <?= $form->field($model, 'nombre_empresa')->textInput(['maxlength' => true]) ?>
 
+    <?= $form->field($model, 'frente')->textInput() ?>
 
-    <?= $form->field($model, 'estado_id')->DropDownList(
-                                  ArrayHelper::map( Estado::find()->all(), 'id_estado', 'descripcion' ),
-                                  [
-                                            'prompt'=>'seleccione'
+    <?= $form->field($model, 'fondo')->textInput() ?>
 
-                                  ]
-                                  );  ?>
+    <?= $form->field($model, 'Referencia_stand')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'municipio_id')->DropDownList(
-                                  ArrayHelper::map( Municipio::find()->all(), 'id_municipio', 'descripcion' ),
-                                  [
-                                            'prompt'=>'seleccione'
-
-                                  ]
-                                  );  ?>
+    <?= $form->field($model, 'cantidad_stand')->textInput() ?>
 
     <?= $form->field($model, 'direccion')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'medidas')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'fecha_pedido')->textInput() ?>
 
-    
+    <?= $form->field($model, 'telefono')->textInput() ?>
+
+    <?= $form->field($model, 'municipio_id')->textInput() ?>
+
+    <?= $form->field($model, 'estado_id')->textInput() ?>
+
+    <?= $form->field($model, 'updated_at')->textInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

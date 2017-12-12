@@ -30,11 +30,18 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'id_pedido',
             'cliente_id',
-            'fecha_pedido',
-            'estado_id',
-            'municipio_id',
+            'nombre_expo',
+            'nombre_empresa',
+            'frente',
+            'fondo',
+            'Referencia_stand',
+            'cantidad_stand',
             'direccion',
-            'medidas',
+            'fecha_pedido',
+            'telefono',
+            'municipio_id',
+            'estado_id',
+            'updated_at',
         ],
     ]) ?>
 
